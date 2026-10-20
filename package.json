@@ -1,0 +1,21 @@
+{
+  "name": "activity-3-halloween",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Activity 3.0 — Halloween party word game for Android",
+  "scripts": {
+    "android:add": "cap add android",
+    "android:sync": "cap sync android",
+    "android:open": "cap open android",
+    "android:apk:debug": "cd android && gradlew assembleDebug",
+    "android:aab:release": "cd android && gradlew bundleRelease",
+    "check:js": "node scripts/check-js.cjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
